@@ -1,0 +1,17 @@
+---
+spring:
+  profiles: east
+  client-service-0: firstClient
+  
+---
+spring:
+  profiles: north
+  client-service-0: secondClient
+  
+---
+spring:
+  profiles: sur
+  client-service-0: thirdClient
+  
+
+    
