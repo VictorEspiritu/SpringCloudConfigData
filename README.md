@@ -1,0 +1,2 @@
+# SpringCloudConfigData
+Applications config data
