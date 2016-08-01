@@ -1,0 +1,15 @@
+---
+spring:
+  profiles: secondary
+  application:
+    name: eureka-server-clustered
+server:
+  port: 8032
+eureka:
+  instance:
+    hostname: eureka-server-secondary
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka-server-tertiary:8033/eureka/, http://eureka-server-primary:8031/eureka/
